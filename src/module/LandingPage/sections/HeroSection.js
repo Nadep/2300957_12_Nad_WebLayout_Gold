@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Col, Container, Row } from "reactstrap";
-import CarImage from '../../../assets/img/img_car.png'
+import CarImage from '../../../assets/img_car.png';
 
 export default function HeroSection(){
   return (

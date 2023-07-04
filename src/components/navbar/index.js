@@ -34,6 +34,9 @@ function NavbarComponent(props) {
               <NavLink href="/testimonial/">Testimonial</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/cart/">Cart</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="FAQ">FAQ</NavLink>
             </NavItem>
           </Nav>
