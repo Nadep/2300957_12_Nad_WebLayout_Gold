@@ -12,10 +12,10 @@ export default function Hero(){
     <Layout>
       <HeroSection />
       <OurServiceSection />
-      <WhyUsSection />
-      <TestimoniSection />
-      <CTABannerSection />
-      <FAQSection />
+      <WhyUsSection /> 
+      <TestimoniSection /> <div style={{ marginTop: '100px' }} />
+      <CTABannerSection /> <div style={{ marginTop: '100px' }} />
+      <FAQSection /> <div style={{ marginTop: '100px' }} />
       <FooterSection />
     </Layout>
   )

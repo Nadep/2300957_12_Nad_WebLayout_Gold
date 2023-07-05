@@ -32,17 +32,12 @@ function WhyUsSection () {
         <div style={{ margin: '8em'}} >
             <h2>WhyUs?</h2>
             <div id="why-us2" className="why-question">Mengapa harus pilih Binar Car Rental?</div>
+            <div style={{ marginTop: '50px' }} />
 
             <div style={{ display: "flex", gap: "5em" }}>
                 {whyUsData.map(({ icon, title, desc }, idx) => (
                     <div class="card" key={idx} style={{ flex: 1 }}>
-                        <img
-                        width={"32px"}
-                        height={"32px"}
-                        class="card-img-top"
-                        src={icon}
-                        alt="WhyUsIcon"
-                        />
+                        <img width={"32px"} height={"32px"} src={icon} alt="icon" style={{ alignSelf: "flex-start", marginLeft: "20px", marginTop: "20px" }} />
                         <div class="card-body">
                             <h4 class="card-title">{title}</h4>
                             <p class="card-text">{desc}</p>

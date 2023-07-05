@@ -37,7 +37,7 @@ const OurServiceSection = () => {
           <div>
             {servicesList.map((val, idx) => (
               <div key={idx}>
-                <img style={{ display : "inline "}} src={checkIcon} />
+                <img style={{ display : "inline ", margin: '5px' }} src={checkIcon} />
                 <p style={{ display: "inline" }}>{val}</p>
               </div>
             ))}

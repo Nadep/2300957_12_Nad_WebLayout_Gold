@@ -14,10 +14,10 @@ function FAQSection () {
 
         <div className="col-md">
             <Accordion>
-                <Accordion.Item className="accordion" eventKey="0">
+                <Accordion.Item className="accordion" eventKey="0" >
                     <Accordion.Header><h6>Apa saja syarat yang dibutuhkan?</h6></Accordion.Header>
                     <Accordion.Body><p>Syarat yang dibutuhkan hanya KTP dan SIM</p></Accordion.Body>
-                </Accordion.Item>
+                </Accordion.Item> 
                 <Accordion.Item className="accordion" eventKey="1">
                     <Accordion.Header><h6>Berapa hari minimal sewa mobil lepas kunci?</h6></Accordion.Header>
                     <Accordion.Body><p>Minimal sewa mobil 1 hari</p></Accordion.Body>
