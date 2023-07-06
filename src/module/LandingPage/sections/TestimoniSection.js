@@ -1,18 +1,20 @@
 import React from "react";
 import MenImage from "../../../assets/TestimoniAssets/img_men.svg";
 import WomenImage from "../../../assets/TestimoniAssets/img_women.svg";
+import RateImage from "../../../assets/TestimoniAssets/Rate.svg";
 import { Container, Col, Row } from "reactstrap";
 
 const TestimoniSection = () => {
     return (
         <Container >
             <h2 class="testimoni-section-text-title"> Testimonial </h2>
-            <p class="testimoni-section-text-description"> Berbagai review positif dari para pelanggan kami </p> 
+            <p class="testimoni-section-text-description"> Berbagai review positif dari para pelanggan kami </p> <br></br>
             <Row className="testimoni-container">
 
                 <Col className= "Testimoni-contect-section">
             <Col className="Testimoni-men-image">
-            <img src={MenImage} width="80px" height={"80px"} alt="MenImage" flex-shrink={0} />
+            <img src={MenImage} width="80px" height={"80px"} alt="MenImage" />
+            <img src={RateImage} width="80px" height={"80px"} alt="MenImage" />
             <br></br>
             </Col>
             <p class ="testimoni-section-text-testi"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod” </p>
@@ -21,7 +23,8 @@ const TestimoniSection = () => {
 
             <Col className="Testimoni-content-section">
             <Col className="Testimoni-women-image">
-            <img src={WomenImage} width="80px" height={"80px"} alt="WomenImage" flex-shrink={0} />
+            <img src={WomenImage} width="80px" height={"80px"} alt="WomenImage" />
+            <img src={RateImage} width="80px" height={"80px"} alt="MenImage" />
             <br></br>
             </Col>
             <p class ="testimoni-section-text-testi"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod” </p>
@@ -30,9 +33,10 @@ const TestimoniSection = () => {
 
             <Col className="Testimoni-content-section">
             <Col className="Testimoni-women-image">
-            <img src={WomenImage} width="80px" height={"80px"} alt="WomenImage" flex-shrink={0} />
+            <img src={WomenImage} width="80px" height={"80px"} alt="WomenImage" />
+            <img src={RateImage} width="80px" height={"80px"} alt="MenImage" />
+             <br></br>
             </Col>
-            <br></br>
             <p class ="testimoni-section-text-testi"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod” </p>
             <p class ="testimoni-section-text-name"> John Dee 32, Bromo </p>
             </Col>
@@ -40,7 +44,6 @@ const TestimoniSection = () => {
 
             </Row>
             </Container>
-
 );
     };
 

@@ -14,7 +14,7 @@ const Footer = () => {
         <div class="col">
           
           <h6 style={{ marginLeft: "150px"}}>
-            Jalan Suroyo No. 161 Mayangan Kota <br></br>
+            Jalan Suroyo No. 161 Mayangan Kota 
             Probolonggo 67200 <br></br><br></br>
             binarcarrental@gmail.com <br></br> <br></br>
             081-233-224-808

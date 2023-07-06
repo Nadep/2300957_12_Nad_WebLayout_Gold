@@ -185,15 +185,17 @@
     line-height: 150px;
   }
 
-  .Footer {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
+/* CTA Banner */
 .navbar-brand {
     background-color: #0d28a6; 
     width: 100px;
     height: 34px;
+}
+
+/* Footer */
+.Footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .container-footer {
@@ -202,8 +204,6 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-
-
 
   
     

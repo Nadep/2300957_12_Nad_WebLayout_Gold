@@ -9,7 +9,7 @@ const whyUsData = [
         icon: iconComplete,
         title: "Mobil Lengkap",
         desc: "Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat",
-    },
+    }, 
     {
         icon: iconPrice,
         title: "Harga Murah",
@@ -34,7 +34,7 @@ function WhyUsSection () {
             <div id="why-us2" className="why-question">Mengapa harus pilih Binar Car Rental?</div>
             <div style={{ marginTop: '50px' }} />
 
-            <div style={{ display: "flex", gap: "5em" }}>
+            <div style={{ display: "flex", gap: "3em", weight: "268px", height: "196px"}}>
                 {whyUsData.map(({ icon, title, desc }, idx) => (
                     <div class="card" key={idx} style={{ flex: 1 }}>
                         <img width={"32px"} height={"32px"} src={icon} alt="icon" style={{ alignSelf: "flex-start", marginLeft: "20px", marginTop: "20px" }} />
