@@ -5,16 +5,8 @@ import { Button } from "reactstrap";
 export default function CTABannerSection() {
     return (
         <div 
-        className="container banner mt-5 d-flex flex-column justify-content-center"
-        style={{
-            backgroundColor: "#0D28A6",
-            width: "1168px",
-            height: "326px",
-            top: "2078px",
-            left: "136px",
-            borderRadius: "13px",
-            }}>
-
+        className="banner-container"
+        >
             <div style={{ margin: "100px" }}>
                 <div className="text-center">
                     <h2 style={{ color: "white", fontWeight: "bold" }}> Sewa Mobil di (Lokasimu) Sekarang </h2>

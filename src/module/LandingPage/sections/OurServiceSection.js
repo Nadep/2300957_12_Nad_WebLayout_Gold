@@ -5,39 +5,23 @@ import { Container } from "reactstrap";
 
 const OurServiceSection = () => {
     return (
-      // <div
-      //   style={{
-      //     marginTop: "6em",
-      //     display: "flex",
-      //     justifyContent: "center",
-      //     alignItems: "center",
-      //   }}
-      // >
-      //   <div
-      //     style={{
-      //       marginRight: "-50px",
-      //       flex: 1,
-      //       width: "400px",
-      //       height: "auto",
-      //       textAlign: "center",
-      //     }}
-      //   >
-        <Container fluid style={{ display: "flex", alignItems: "center"}}>
-          <div style={{ flex: 1, marginLeft:200  }}>
-          <img src={ServiceImage} width="400px" height={"auto"} />
+  
+        <Container className="ourService-Container" style={{ marginTop: "100px"}}>
+          <div className="ourServiceImage" >
+          <img src={ServiceImage} />
           </div>
-          <div style={{ flex: 1 }}>
+          <div className="ourServiceContent">
           <h4>Best Car Rental for any kind of trip in (Lokasimu)!</h4>
-          <p style={{margin:"2em 0"}}>
+          <p >
             Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih
             murah dibandingkan yang lain, kondisi mobil baru, serta kualitas
             pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting,
             dll.
           </p>
-          <div>
+          <div className="services-list">
             {servicesList.map((val, idx) => (
               <div key={idx}>
-                <img style={{ display : "inline ", margin: '5px' }} src={checkIcon} />
+                <img className="checklist-Icon"  style={{ margin: '5px' }} src={checkIcon} />
                 <p style={{ display: "inline" }}>{val}</p>
               </div>
             ))}

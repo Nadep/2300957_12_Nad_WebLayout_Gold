@@ -7,7 +7,7 @@ import iconProfessional from "../../../assets/WhyUsAssets/icon_professional.svg"
 const whyUsData = [
     {
         icon: iconComplete,
-        title: "Mobil Lengkap",
+        title: "Mobil Lengkap", 
         desc: "Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat",
     }, 
     {
@@ -29,17 +29,17 @@ const whyUsData = [
 
 function WhyUsSection () {
     return (
-        <div style={{ margin: '8em'}} >
-            <h2>WhyUs?</h2>
-            <div id="why-us2" className="why-question">Mengapa harus pilih Binar Car Rental?</div>
+        <div className="why-us-container"  style={{ margin: '2em', marginTop:"50px"}} >
+            <h2 className ="why-us-title" style={{ marginLeft: "15px"}}>WhyUs?</h2>
+            <div className="why-question">Mengapa harus pilih Binar Car Rental?</div>
             <div style={{ marginTop: '50px' }} />
 
-            <div style={{ display: "flex", gap: "3em", weight: "268px", height: "196px"}}>
+            <div cards style={{ display: "flex", gap: "3em", weight: "268px", height: "196px"}}>
                 {whyUsData.map(({ icon, title, desc }, idx) => (
-                    <div class="card" key={idx} style={{ flex: 1 }}>
-                        <img width={"32px"} height={"32px"} src={icon} alt="icon" style={{ alignSelf: "flex-start", marginLeft: "20px", marginTop: "20px" }} />
+                    <div className="card" key={idx} style={{ flex: 1 }}>
+                        <img className="icon-why-us" width={"32px"} height={"32px"} src={icon} alt="icon" style={{ alignSelf: "flex-start", marginLeft: "20px", marginTop: "20px" }} />
                         <div class="card-body">
-                            <h4 class="card-title">{title}</h4>
+                            <h4 class="card-title">{title} </h4>
                             <p class="card-text">{desc}</p>
                         </div>
                     </div>

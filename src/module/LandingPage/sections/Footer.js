@@ -13,7 +13,7 @@ const Footer = () => {
       <div class="row">
         <div class="col">
           
-          <h6 style={{ marginLeft: "150px"}}>
+          <h6 style={{ marginLeft: "90px"}}>
             Jalan Suroyo No. 161 Mayangan Kota 
             Probolonggo 67200 <br></br><br></br>
             binarcarrental@gmail.com <br></br> <br></br>

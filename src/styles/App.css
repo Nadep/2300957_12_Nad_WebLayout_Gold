@@ -52,15 +52,149 @@
   }
 }
 
-  .OurServiceSection {
-    display: flex;
+/* OurService */
+.ourService-Container {
+  display: flex;
+  align-items: center;
+}
+
+.Service-Image {
+  flex: 1;
+  margin-left: 200px;
+}
+
+.Service-Image img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.ourService-Content {
+  flex: 1;
+}
+
+.ourService-Content h4 {
+  font-weight: bolder;
+  font-size: 3vw;
+  margin-bottom: 0.7em;
+  margin-right: 10%;
+}
+
+.ourService-Content p {
+  font-weight: bold;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.services-list {
+  margin-top: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.checklist-Icon {
+  display: inline;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.service-text p {
+  display: inline;
+  font-size: 1vw;
+  margin: 0;
+}
+
+/* ourServiceResponsiveness */
+@media screen and (max-width: 768px) {
+  .ourService-Container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
   }
 
+  .ourServiceImage {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .ourServiceContent {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  .ourService-Content h4 {
+    font-size: 5vw;
+    margin-bottom: 0.8em;
+  }
+
+  .ourService-Content p {
+    font-size: 2.5vw;
+    line-height: 1.5;
+    margin-bottom: 0.9em;
+  }
+
+  .checklist-Icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
   /* WhyUs */
-  .card-title {
+.why-us-container {
+  margin: 2px;
+}
+
+.why-us-title {
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.why-us-question {
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.cards {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+}
+
+.why-us-card {
+  display: flex;
+  width: 268px;
+  height: 196px;
+  margin-right: 24px;
+}
+
+.icon-why-us {
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+   
+   .card-title {
     font-family: "Arial";
     font-style: normal;
     font-weight: 700;
@@ -111,85 +245,139 @@
     flex-shrink: 0;
   }
 
+
+/* WhyUs Responsiveness */
+@media screen and (max-width: 768px) {
+  .why-us-title,
+  .why-us-question {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .why-us-card:last-child {
+    margin-right: 0;
+  }
+}
+
     /* Testimoni-section */
-  .testimoni-container{
-    border-radius: 8px;
-    background-color: #F1F3FF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  
-  .testimoni-section-text-title {
-    color: #000;
+.testi-heading {
+  margin-left: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.testi-desc {
+  margin-left: 100px;
+  text-align: center;
+}
+
+.testi-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  height: 270px;
+  margin: 12px;
+  border-radius: 8px;
+  background-color: #f1f3ff;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 80px;
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .testi-heading,
+  .testi-desc {
+    margin-left: 0;
     text-align: center;
-    font-size: 24px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
   }
 
-  .testimoni-section-text-description {
-    color: #000;
-    text-align: center;
-    font-size: 14px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
+  .testi-container {
+    flex-wrap: wrap;
+    margin-top: 15px;
   }
- 
-  .testimoni-section-text-testi {
-    color: #000;
-    font-size: 14px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
 
-    display: flex;
-    width: 415px;
+  .card {
+    flex-basis: 100%;
+  }
+
+  .card-content {
     flex-direction: column;
-  }
-
-  .testimoni-section-text-name {
-    color: #000;
-    font-size: 14px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-
-    display: flex;
-    width: 415px;
-    flex-direction: column;
-  }
-
-  .testimoni-men-image {
-    border-radius: 80px;
-    background:lightgray 50% / cover no-repeat;
-
-    width: 80px;
-    height: 80px;
-    flex-shrink: 0;
-  } 
-
-
-  .div style {
-    color: var(--neutral-01, #FFF);
+    justify-content: center;
     text-align: center;
-    font-size: 36px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150px;
   }
+
+  .profile-image {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
 
 /* CTA Banner */
+@media only screen and (min-width: 600px) {
 .navbar-brand {
     background-color: #0d28a6; 
-    width: 100px;
+    width:fit-content;
     height: 34px;
+}
+
+.banner-container {
+  background-color: #0d28a6; 
+  width: 1168px;
+  height: 326px;
+  border-radius: 13px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+}
 }
 
 /* Footer */
